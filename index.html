@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pottery Shape Visualizer</h1>
+    <div class="container">
+        <div class="canvas-container">
+            <p>Draw half the pot profile below (from center outwards):</p>
+            <canvas id="drawingCanvas" width="300" height="400"></canvas>
+            <button id="clearButton">Clear Drawing</button>
+            <!-- **** ADDED CHECKBOX **** -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="smoothCheckbox">
+                <label for="smoothCheckbox">Smooth Curve</label>
+            </div>
+            <!-- *********************** -->
+        </div>
+        <div class="canvas-container">
+            <p>3D Preview:</p>
+            <canvas id="renderCanvas"></canvas> <!-- Size will be set by JS -->
+        </div>
+    </div>
+
+    <!-- Import Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <!-- Your script -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
