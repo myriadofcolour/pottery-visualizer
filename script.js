@@ -13,7 +13,7 @@ const BACKGROUND_COLOR = 0xf0f0f0;
 const POT_SEGMENTS = 32;          // Smoothness of the 3D revolution
 const DRAWING_CENTER_X = DRAWING_CANVAS_WIDTH / 2; // Vertical axis on drawing canvas
 const MIN_POINT_DISTANCE_SQ = 4;  // Min squared distance between stored points
-const SMOOTHING_ITERATIONS = 2;   // How many passes for the smoothing function
+const SMOOTHING_ITERATIONS = 5;   // How many passes for the smoothing function
 const POT_NOMINAL_HEIGHT = 10.0;  // Target height for the pot in 3D space for scaling/camera
 
 // =============================================================================
